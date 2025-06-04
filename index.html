@@ -2,11 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Test 3D – Amazing Jaiks</title>
+    <title>Test Cubo</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <style>
-      body { margin: 0; }
-    </style>
+    <style>body { margin: 0; }</style>
   </head>
   <body>
     <a-scene>
@@ -14,12 +12,9 @@
         <a-asset-item id="modello" src="cubo.glb"></a-asset-item>
       </a-assets>
 
-      <a-entity gltf-model="#modello" 
-                position="0 1.6 -3" 
-                rotation="0 0 0" 
-                scale="1 1 1">
-      </a-entity>
+      <a-entity gltf-model="#modello" position="0 1.6 -3" scale="1 1 1"></a-entity>
 
+      <a-sky color="#ECECEC"></a-sky>
       <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
     </a-scene>
   </body>
